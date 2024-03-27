@@ -15,6 +15,8 @@
     align-items: center;
     background-color: var(--White);
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+    /* position: fixed; */
+    /* z-index: 1; */
 }
 
 #navbar > ul{
@@ -30,7 +32,7 @@
     color: var(--GrayishBlue);
 }
 
-#navbar > button{
+button{
     width: 168px;
     height: 48px;
     border: none;
@@ -42,11 +44,43 @@
 }
 
 #mainContent{
+    width: 100%;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#mainContent > .content-panel{
+    width: 50%;
+    height: 100%;
+    padding: 120px;
+}
+
+#mainContent > .content-panel > h1{
+    font-size: 58px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+#mainContent > .content-panel > p{
+    margin: 30px 0px;
+    color: var(--GrayishBlue);
+    font-size: 18px;
+    line-height: 28px;
+}
+
 #mainContent > .main-content-mobile{
+    height: 100%;
+    width: 50%;
     background-image: url("src/assets/images/bg-intro-desktop.svg");
+    z-index: -1;
+}
+
+#mainContent > .main-content-mobile > img{
+    bottom: 140px;
+    left: 65px;
+    width: 110%;
+    position: relative;
+    z-index: 0;
 }

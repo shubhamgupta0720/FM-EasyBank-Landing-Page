@@ -1,4 +1,5 @@
 import React from "react";
+import RequestInviteButton from "./RequestInviteButton";
 
 function Navbar(){
     return (
@@ -11,7 +12,7 @@ function Navbar(){
                 <li>Blog</li>
                 <li>Careers</li>
             </ul>
-            <button>Request Invite</button>
+            <RequestInviteButton/>
         </div>
     )
 }
