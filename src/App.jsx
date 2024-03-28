@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import MainContent from './components/MainContent'
 import Features from './components/Features'
+import LatestArticle from './components/LatestArticles'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <MainContent />
       <Features />
+      <LatestArticle />
     </>
   )
 }
