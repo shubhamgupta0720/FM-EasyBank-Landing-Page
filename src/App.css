@@ -9,14 +9,14 @@
 }
 
 #navbar{
-    padding: 14px 120px;
+    padding: 14px 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--White);
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
-    /* position: fixed; */
-    /* z-index: 1; */
+    position: relative;
+    z-index: 2;
 }
 
 #navbar > ul{
@@ -28,7 +28,7 @@
 #navbar > ul > li{
     margin: 0px 20px;
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--GrayishBlue);
 }
 
@@ -54,7 +54,7 @@ button{
 #mainContent > .content-panel{
     width: 50%;
     height: 100%;
-    padding: 120px;
+    padding: 140px;
 }
 
 #mainContent > .content-panel > h1{
@@ -74,8 +74,9 @@ button{
     height: 100%;
     width: 50%;
     background-image: url("src/assets/images/bg-intro-desktop.svg");
-    z-index: -1;
-    overflow: visible;
+    background-position: -40px -260px;
+    background-repeat: no-repeat;
+    z-index: 1;
     position: relative;
 }
 
@@ -84,12 +85,11 @@ button{
     bottom: -115px;
     /* left: 65px; */
     width: 100%;
-    z-index: 0;
 }
 
 #features{
     background-color: var(--LightGrayishBlue);
-    padding: 120px;
+    padding: 120px 140px;
 }
 
 #features > h1{
@@ -127,7 +127,7 @@ button{
 }
 
 #latestArticle{
-    padding: 120px;
+    padding: 120px 140px;
     background-color: var(--VeryLightGray);
 }
 
@@ -178,4 +178,56 @@ button{
     color: var(--GrayishBlue);
     padding: 0px 24px;
     line-height: 20px;
+}
+
+#footer{
+    padding: 60px 140px;
+    width: 100%;
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer > .logo-pages{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer > .logo-pages > .logo-social > .social-icon{
+    margin-top: 50px;
+    
+}
+
+#footer > .logo-pages > .logo-social > .social-icon > img{
+    margin-right: 12px;
+}
+
+#footer > .logo-pages > .pages{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+}
+
+#footer > .logo-pages > .pages > a{
+    text-decoration: none;
+    color: var(--White);
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+#footer > .invite-copywrite{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#footer > .invite-copywrite > p{
+    margin-top: 28px;
+    font-size: 15px;
+    color: var(--GrayishBlue);
 }

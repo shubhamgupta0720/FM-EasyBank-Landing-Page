@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import MainContent from './components/MainContent'
 import Features from './components/Features'
 import LatestArticle from './components/LatestArticles'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <MainContent />
       <Features />
       <LatestArticle />
+      <Footer />
     </>
   )
 }
